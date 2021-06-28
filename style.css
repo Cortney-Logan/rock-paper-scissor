@@ -1,0 +1,90 @@
+/* Colors
+FAF3F3
+E1E5EA
+A7BBC7
+DA7F8F
+
+*/
+
+body {
+  margin: 0;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #FAF3F3;
+}
+
+/* -------------------- Game Area -------------------- */
+
+#gameWrapper {
+  /* allows gameWrapper to fill page as part of body flexbox*/
+  flex: 1;
+
+  /* gameWrapper is itself a flex box and centers elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#gameBoard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ---------- buttons ---------- */
+
+button {
+  margin: 25px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #A7BBC7;
+  color: white;
+}
+
+.move {
+  background-color: #E1E5EA;
+  height: 100px;
+  width: 200px;
+}
+
+.selected{
+    background-color: #A7BBC7;
+}
+
+/* -------------------- Comp player Area -------------------- */
+
+#compMoveWrapper {
+  display: flex;
+}
+
+/* -------------------- Status Area -------------------- */
+
+#statusWrapper {
+  text-align: center;
+}
+
+#status {
+  width: 20vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+/* -------------------- Start Area -------------------- */
+#start {
+  font-size: 1.5rem;
+  height: 75px;
+  width: 150px;
+}

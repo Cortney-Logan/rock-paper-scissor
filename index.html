@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Rock-Paper-Scissor</title>
+  </head>
+
+  <body>
+
+    <!-------------------- Header -------------------->
+    <header><h1>Rock-Paper-Scissor</h1></header>
+    <!-------------------- Game area -------------------->
+    <!-- Main wrapper that holds game and status -->
+    <div id="gameWrapper">
+
+      <!-- Game board as buttons that save gameplay -->
+      <h3>PLAYER MOVE</h3>
+      <div id="gameBoard">
+
+        <button disabled="true" class="move playerMove" id="rock">ROCK</button>
+        <button disabled="true" class="move playerMove" id="paper">PAPER</button>
+        <button disabled="true" class="move playerMove" id="scissor">SCISSOR</button>
+      </div>
+
+      <!-- Comp player area -->
+      <h3>COMPUTER MOVE</h3>
+      <div id="compMoveWrapper">
+        <button disabled="true" id="compMove" class="move">COMPUTER MOVE</button>
+      </div>
+
+      <!-- Status area -->
+      <div id="statusWrapper">
+        <div id="status">Press PLAY to begin</div>
+      </div>
+
+      <!-- Start button -->
+      <div id="startWrapper">
+        <button id="start">PLAY</button>
+      </div>
+    </div>
+    
+    <script src="/index.js"></script>
+  </body>
+</html>
